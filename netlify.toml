@@ -1,0 +1,8 @@
+# example netlify.toml
+[build]
+  command = "yarn build"
+  functions = "lambda" #  netlify-lambda reads this
+  publish = "public"
+[build.environment]
+  YARN_VERSION = "1.9.4"
+  YARN_FLAGS = "--no-ignore-optional"

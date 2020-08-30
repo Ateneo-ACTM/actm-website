@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: home_page
+    label: "Home Page"
+    filter:
+      field: "templateKey"
+      value: "home-page"
+    files:
+      - file: src/pages/index.md
+        label: Home
+        name: index
+        fields:
+          - label: "Template Key"
+            name: templateKey
+            widget: hidden
+            default: home-page
+          - label: "URL Slug"
+            name: slug
+            widget: hidden
+            default: /
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - label: "Site Title"
+                name: siteTitle
+                widget: string
+                default: "Site Title"
+              - label: "Site Description"
+                name: siteDescription
+                widget: string
+                required: false
+                default: "Site Description"
