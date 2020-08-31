@@ -1,10 +1,27 @@
 import React from "react"
+import { Link } from "gatsby"
 import { Nav } from "./styles"
 
 const Navbar = ({ slug }) => (
   <Nav>
-    <h1>This is the navbar</h1>
-    <h2>You are in {slug} page</h2>
+    <div className='navbar-container'>
+      <Link to="#" className='navbar-logo'>
+        ACTM
+      </Link>
+      <div className='menu-icon'></div>
+      <ul className='nav-menu'>
+        <li className='nav-item'>
+          <Link to='#' className='nav-links'>
+            Home
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link to='#' className='nav-links'>
+            About
+          </Link>
+        </li>
+      </ul>
+    </div>
   </Nav>
 )
 
