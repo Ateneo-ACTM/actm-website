@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import PropTypes from "/prop-types"
+import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 // import image from "../assets/images/uxapps.jpg"
 import { useStaticQuery, graphql } from "gatsby"
