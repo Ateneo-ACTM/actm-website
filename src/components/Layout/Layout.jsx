@@ -10,6 +10,7 @@ import Navbar from "../Navbar"
 import SEO from "../SEO"
 import PropTypes from "prop-types"
 import "normalize.css"
+import "./styles.css"
 
 const Layout = ({ children, seo, slug }) => {
   const { siteTitle, siteDescription } = seo

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.14.0/css/all.css')
+
+:root {
+  --primary: yellow;
+  --secondary: blue;
+  --tertiary: skyblue;
+  --navbar: black;
+  --navbar-text: white;
+  --border: darkblue;
+  --shadow: rgba(0,0,0,0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
