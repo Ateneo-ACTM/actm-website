@@ -8,7 +8,7 @@ const Navbar = ({ slug }) => (
   <Nav>
     <Container>
       <NavLogo>ACTM<i className='fas fa-location-arrow' /></NavLogo>
-      <MenuIcon><Burger Component="button" type="button" /></MenuIcon>
+      <MenuIcon></MenuIcon>
       <NavMenu>
         <NavItem>
           <NavLink to="#">Home</NavLink>
