@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
 @import url('https://use.fontawesome.com/releases/v5.14.0/css/all.css')
 
 :root {
-  --primary: yellow;
-  --secondary: blue;
-  --tertiary: skyblue;
-  --navbar: black;
-  --navbar-text: white;
+  --primary: #082D3D;
+  --secondary: #10BBCC;
+  --tertiary: #FAC001;
+  --navbar: white;
+  --navbar-text: black;
+  --footer: white;
+  --footer-text: #c4c4c4;
   --border: darkblue;
   --shadow: rgba(0,0,0,0.2);
 }
