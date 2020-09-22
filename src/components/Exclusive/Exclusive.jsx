@@ -23,22 +23,20 @@ function Exclusive() {
     ]
     
     return (
-        exclusive.map((exclusive, index) => {
-            return (
-                <MainCard key={index}>
-                    <MainContainer> 
-                        <MainImage src="" />
-                        <MainBody>
-                            <MainInfo> {exclusive.category} </MainInfo>
-                            <MainTitle> {exclusive.title} </MainTitle>
-                            <MainInfo>By {exclusive.author} | { exclusive.date } </MainInfo>
-                            <MainContent> {exclusive.content} </MainContent>
-                            <MainLink to={exclusive.link}>Read More</MainLink>
-                        </MainBody>
-                    </MainContainer>
-                </MainCard>
-            )
-        })
+        exclusive.map((exclusive, index) => (
+            <MainCard key={index}>
+                <MainContainer> 
+                    <MainImage src="" />
+                    <MainBody>
+                        <MainInfo> {exclusive.category} </MainInfo>
+                        <MainTitle> {exclusive.title} </MainTitle>
+                        <MainInfo>By {exclusive.author} | { exclusive.date } </MainInfo>
+                        <MainContent> {exclusive.content} </MainContent>
+                        <MainLink to={exclusive.link}>Read More</MainLink>
+                    </MainBody>
+                </MainContainer>
+            </MainCard>
+        ))
     )
 }
 
