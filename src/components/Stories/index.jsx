@@ -1,2 +1,2 @@
-import Story from "./Story"
-export default Story
+import Stories from "./Stories"
+export default Stories
