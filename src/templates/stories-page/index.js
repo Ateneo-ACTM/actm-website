@@ -1,18 +1,18 @@
 import React from "react"
-import Stories from '../../../components/Stories'
-import Layout from "../../../components/Layout"
+import Exclusive from "../../components/Exclusive"
+import Layout from "../../components/Layout/"
 
 const StoriesPage = () => {
-    const seo = {
-        siteTitle: 'Hello',
-        siteDescription: 'World'
-    }
+  const seo = {
+    siteTitle: 'Hello',
+    siteDescription: 'World'
+  }
 
-    return (
-        <Layout path ="/stories" seo={seo}>
-            <Stories />
-        </Layout>
-    )
+  return (
+    <Layout path="/Stories" seo={seo}>
+      <Exclusive />
+    </Layout>
+  )
 }
 
 export default StoriesPage
