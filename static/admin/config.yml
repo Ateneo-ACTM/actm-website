@@ -37,6 +37,47 @@ collections:
                 widget: string
                 required: false
                 default: "Site Description"
+          - label: Hero Section
+            name: heroSection
+            widget: object
+            fields:
+              - label: Image
+                name: image
+                widget: image
+              - label: "Title"
+                name: title
+                widget: string
+                default: "ATENEO ASSOCIATION FOR COMMUNICATION TECHNOLOGY MANAGEMENT"
+              - label: "Tagline"
+                name: tagline
+                widget: string
+          - label: Quote Section
+            name: quoteSection
+            widget: object
+            fields:
+              - label: Image
+                name: image
+                widget: image
+              - label: "Quote"
+                name: quote
+                widget: text
+          - label: MAD Section
+            name: madSection
+            widget: object
+            fields:
+              - label: Image
+                name: image
+                widget: image
+              - label: "Tagline"
+                name: tagline
+                widget: text
+              - label: "Button Visible"
+                name: buttonVisible
+                widget: boolean
+                default: true
+              - label: "Button Text"
+                name: buttonText
+                widget: string
   - name: story_page
     label: "Stories"
     create: true

@@ -2,18 +2,33 @@ import React, { Fragment } from "react"
 import Layout from "../../components/Layout/"
 import { graphql } from "gatsby"
 
-export const HomePageTemplate = () => (
+import HeroSection from "./components/hero-section"
+import QuoteSection from "./components/quote-section"
+import MADSection from "./components/mad-section"
+
+export const HomePageTemplate = ({ heroSection, quoteSection, madSection }) => (
   <Fragment>
-    <h1>This is the home page</h1>
+    <HeroSection
+      title={heroSection.title}
+      tagline={heroSection.tagline}
+      image={heroSection.image}
+    />
+    <QuoteSection quote={quoteSection.quote} image={quoteSection.image} />
+    <MADSection
+      tagline={madSection.tagline}
+      image={madSection.image}
+      buttonText={madSection.buttonText}
+      buttonVisible={madSection.buttonVisible}
+    />
   </Fragment>
 )
 
 const HomePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const { slug, seo } = frontmatter
+  const { slug, seo, heroSection, quoteSection, madSection } = frontmatter
   return (
     <Layout seo={seo} slug={slug}>
-      <HomePageTemplate />
+      <HomePageTemplate {...{ heroSection, quoteSection, madSection }} />
     </Layout>
   )
 }
@@ -28,6 +43,51 @@ export const HomePageQuery = graphql`
         seo {
           siteTitle
           siteDescription
+        }
+        heroSection {
+          title
+          tagline
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1440, quality: 90) {
+                src
+                srcSet
+                aspectRatio
+                sizes
+                base64
+              }
+            }
+          }
+        }
+        quoteSection {
+          quote
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1440, quality: 90) {
+                src
+                srcSet
+                aspectRatio
+                sizes
+                base64
+              }
+            }
+          }
+        }
+        madSection {
+          tagline
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1440, quality: 90) {
+                src
+                srcSet
+                aspectRatio
+                sizes
+                base64
+              }
+            }
+          }
+          buttonVisible
+          buttonText
         }
       }
     }
