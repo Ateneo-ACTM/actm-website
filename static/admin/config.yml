@@ -37,3 +37,45 @@ collections:
                 widget: string
                 required: false
                 default: "Site Description"
+  - name: story_page
+    label: "Stories"
+    create: true
+    identifier_field: title
+    slug: "{{title}}"
+    folder: src/pages/stories
+    filter:
+      field: templateKey
+      value: story-page
+    fields:
+      - label: "Template Key"
+        name: templateKey
+        widget: hidden
+        default: story-page
+      - label: "URL Slug"
+        name: slug
+        widget: string
+      - label: "Title"
+        name: title
+        widget: string
+      - label: "Brief Description"
+        name: description
+        widget: text
+      - label: "Date and Time Posted"
+        name: datetime
+        widget: "datetime"
+        dateFormat: "MMMM.D.YYYY"
+        timeFormat: "h:mm"
+        format: "LLL"
+      - label: "Category"
+        name: category
+        widget: select
+        options: ["Category"]
+      - label: "Author"
+        name: author
+        widget: string
+      - label: Image
+        name: image
+        widget: image
+      - label: Body
+        name: body
+        widget: markdown

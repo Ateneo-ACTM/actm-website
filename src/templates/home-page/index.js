@@ -12,7 +12,7 @@ const HomePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   const { slug, seo } = frontmatter
   return (
-    <Layout>
+    <Layout seo={seo} slug={slug}>
       <HomePageTemplate />
     </Layout>
   )
