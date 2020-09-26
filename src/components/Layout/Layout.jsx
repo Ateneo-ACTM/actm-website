@@ -13,6 +13,11 @@ import PropTypes from "prop-types"
 import "normalize.css"
 import "./styles.css"
 
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
+
 const Layout = ({ children, seo, slug }) => {
   const { siteTitle, siteDescription } = seo
   return (
