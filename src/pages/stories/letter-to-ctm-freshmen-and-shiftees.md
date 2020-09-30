@@ -1,6 +1,6 @@
 ---
 templateKey: story-page
-slug: stories/letter-to-ctm-freshmen-and-shiftees
+slug: /stories/letter-to-ctm-freshmen-and-shiftees
 title: Letter to CTM Freshmen and Shiftees
 description: A letter from the former President of Ateneo Association of
   Communication Technology Management
