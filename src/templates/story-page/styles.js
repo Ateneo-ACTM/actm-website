@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-image: ${props => `url(${props.image})`};
   padding: 0 0 90px 0px;
