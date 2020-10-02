@@ -6,7 +6,11 @@ description: A letter from the former President of Ateneo Association of
   Communication Technology Management
 datetime: October 1, 2020 12:07 AM
 category: Category
+<<<<<<< HEAD
 author: ACTM Ad Hoc Team
+=======
+author: Joddi Chua
+>>>>>>> e6f1698191bbccc50a0ae58b7939b9648d689d6e
 image: /images/uploads/joddi.jpg
 body: |
   Hey there, eager freshie/shiftee! <br/><br/>
