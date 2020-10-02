@@ -6,7 +6,7 @@ export const Section = styled.div`
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 375px) { flex-direction: column; align-items: center; align-content: center; }
+  @media screen and (max-width: 480px) { flex-direction: column; align-items: center; align-content: center; }
 `
 export const Card = styled(Link)`
   display: flex;
@@ -17,7 +17,7 @@ export const Card = styled(Link)`
   margin: 60px 30px;
 
   @media screen and (max-width: 768px) { width: 50%; margin: 30px; }
-  @media screen and (max-width: 375px) { width: 100%; height: 100%; margin: 0; }
+  @media screen and (max-width: 480px) { width: 100%; height: 100%; margin: 0; }
 `
 
 export const CardContainer = styled.div`
@@ -37,7 +37,7 @@ export const CardContainer = styled.div`
   }
 
   @media screen and (max-width: 768px) { width: 100%; height: 360px; }
-  @media screen and (max-width: 375px) { width: 100%; height: 360px; margin: 30px; }
+  @media screen and (max-width: 480px) { width: 100%; height: 360px; margin: 30px; }
 `
 
 export const CardImage = styled.div`
@@ -50,7 +50,7 @@ export const CardImage = styled.div`
   background-size: cover;
 
   @media screen and (max-width: 768px) { flex-basis: 75% }
-  @media screen and (max-width: 375px) { flex-basis: 80% }
+  @media screen and (max-width: 480px) { flex-basis: 80% }
 `
 
 export const CardBody = styled.div`
@@ -64,7 +64,7 @@ export const CardBody = styled.div`
   padding: 0.75rem 1.5rem;
 
   @media screen and (max-width: 768px) { flex-basis: 25%; }
-  @media screen and (max-width: 375px) { flex-basis: 20%; }
+  @media screen and (max-width: 480px) { flex-basis: 20%; }
 `
 
 export const CardTitle = styled.h1`

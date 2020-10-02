@@ -30,8 +30,8 @@ export const Card = styled.div`
   width: 65%;
   margin: -120px auto auto auto;
 
-  @media screen and (max-width: 768px) { width: 85%; padding: 30px; }
-  @media screen and (max-width: 360px) { width: 95%; padding: 30px 15px; }
+  @media screen and (max-width: 768px) { width: 80%; padding: 30px; }
+  @media screen and (max-width: 480px) { width: 90%; padding: 30px 15px; }
 `
 
 export const BackWrapper = styled.div`
@@ -66,7 +66,7 @@ export const Title = styled.h1`
   color: #000000;
   text-align: center;
 
-  @media screen and (max-width: 360px) { font-size: 2.5rem; line-height: 50px; }
+  @media screen and (max-width: 480px) { font-size: 2.5rem; line-height: 50px; }
 `
 
 export const CategoryWrapper = styled.div`
@@ -91,11 +91,13 @@ export const Subtitle = styled.h4`
   color: #062b3a;
   margin-bottom: 16px;
   text-align: center;
+
+  @media screen and (max-width: 480px) { font-size: 0.9rem; }
 `
 export const Container = styled.div`
   padding: 30px 60px;
 
-  @media screen and (max-width: 360px) { padding: 0; }
+  @media screen and (max-width: 480px) { padding: 15px; }
 `
 
 export const Body = styled.div`
@@ -108,9 +110,9 @@ export const Body = styled.div`
 
   color: #000000;
 
-  & img {
-    margin: 30px 0;
-  }
+  & img { margin: 30px 0; }
+  
+  @media screen and (max-width: 480px) { font-size: 0.9rem; line-height: 24px; }
 `
 
 export const SocmedWrapper = styled.div`

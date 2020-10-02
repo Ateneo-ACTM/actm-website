@@ -17,12 +17,13 @@ export const Hero = styled.section`
     width: 100vw;
 
     @media screen and (max-width: 768px) {
-        height: 30vh;
+        margin-top: 60px;
+        height: 35vh;
         background-image: url(${tablet});
     }
 
-    @media screen and (max-width: 375px) {
-        height: 25vh;
+    @media screen and (max-width: 480px) {
+        height: 30vh;
         background-image: url(${mobile});
     }
 `
@@ -58,6 +59,7 @@ export const ContentText = styled.p`
     text-align: center;
     font-size: 1.2rem;
     font-weight: 400;
+    width: 75%;
 
     @media screen and (max-width: 960px) {
         font-size: 1rem;
