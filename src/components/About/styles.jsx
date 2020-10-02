@@ -71,7 +71,7 @@ export const WhoContent = styled.div`
 `
 
 export const WhoHeader = styled.h1`
-    font-family: 'Pangram', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: left;    
     font-size: 2.5rem;
     font-weight: 400;
@@ -112,7 +112,7 @@ export const What = styled.section`
 
 export const WhatTitle = styled.h2`
     text-transform: uppercase;
-    font-family: 'Pangram', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     display: flex;
@@ -169,7 +169,7 @@ export const WhatWrapper = styled.div`
 
 export const WhatContent = styled.div`
     width: 50vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -210,13 +210,13 @@ export const WhatContent = styled.div`
 
 export const WhatHeader = styled.h1`
     width: 280px;
-    font-family: 'Pangram', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 40px;
     text-align: center;
     color: white;
-    line-height: 110%;
+    line-height: 120%;
 
     @media screen and (max-width: 768px) {
         width: 75vw;
@@ -234,7 +234,7 @@ export const WhatHeader = styled.h1`
 
 export const HeaderSpan = styled.span`
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     color: #FEC200;
     white-space: pre-wrap;
 
@@ -278,7 +278,7 @@ export const Acads = styled.section`
 `
 
 export const AcadsHeader = styled.h1`
-    font-family: 'Pangram', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-weight: 400;
     padding: 100px 0 40px 0;
@@ -325,7 +325,7 @@ export const AcadsContent = styled.div`
 `
 
 export const AcadsSub = styled.h2`
-    font-family: 'Pangram', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     display: flex;
