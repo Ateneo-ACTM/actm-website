@@ -45,7 +45,7 @@ export const WhoContent = styled.div`
     position: absolute;
     bottom: 20%;
     right: 10%;
-    width: auto;
+    width: 40%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -75,6 +75,7 @@ export const WhoHeader = styled.h1`
     @media screen and (max-width: 480px) {
         margin: 0;
         font-size: 2rem;
+        width: 360px;
     }
 `
 
@@ -83,7 +84,7 @@ export const WhoText = styled.p`
     text-align: left;
     font-size: 0.8rem;
     line-height: 175%;
-    width: 550px;
+    width: 100%;
 
     @media screen and (max-width: 768px) {
         font-size: 0.8rem;
@@ -228,7 +229,7 @@ export const HeaderSpan = styled.span`
     color: #FEC200;
     white-space: pre-wrap;
 
-    @media screen and (max-width: 375px) { font-weight: 900; }
+    @media screen and (max-width: 480px) { font-weight: 900; }
 `
 
 export const WhatText = styled.p`
@@ -250,6 +251,7 @@ export const WhatText = styled.p`
     }
 
     @media screen and (max-width: 480px) { 
+        font-size: 0.75rem; 
         width: 80vw; 
         
         &.left-m { text-align: left; }
@@ -303,11 +305,12 @@ export const AcadsContent = styled.div`
     align-items: flex-start;
     align-content: center;
     height: 320px;
-    width: 40vw;
+    width: 40%;
+    padding-right: 2rem;
 
     @media screen and (max-width: 768px) { 
         height: 100%;
-        width: 80vw; 
+        width: 80%; 
         justify-content: center;
         align-items: center;
     }
@@ -331,7 +334,7 @@ export const AcadsText = styled.p`
     font-weight: 400;
     line-height: 175%;
     text-align: justify;
-    width: 500px;
+    max-width: 500px;
 
     @media screen and (max-width: 768px) { width: 100%; }
 `
@@ -368,7 +371,7 @@ export const AcadsImgMobile = styled.img`
     align-items: center;
     align-content: center;
     width: 100%;
-    height: 25vh;
+    height: 100%;
     background: #E5E5E5;
     border: 1px solid rgba(0,0,0,0.3);
     border-radius: 15px;

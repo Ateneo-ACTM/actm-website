@@ -16,7 +16,7 @@ export const Card = styled(Link)`
   align-items: center;
   margin: 60px 30px;
 
-  @media screen and (max-width: 768px) { width: 50%; margin: 30px; }
+  @media screen and (max-width: 960px) { width: 50%; margin: 30px; }
   @media screen and (max-width: 480px) { width: 100%; height: 100%; margin: 0; }
 `
 
@@ -37,7 +37,7 @@ export const CardContainer = styled.div`
   }
 
   @media screen and (max-width: 768px) { width: 100%; height: 360px; }
-  @media screen and (max-width: 480px) { width: 100%; height: 360px; margin: 30px; }
+  @media screen and (max-width: 480px) { width: 100%; margin: 30px; }
 `
 
 export const CardImage = styled.div`
@@ -76,7 +76,7 @@ export const CardTitle = styled.h1`
   padding: 0 0 2.5px 0px;
   width: 100%;
 
-  @media screen and (max-width: 768px) { line-height: 20px; }
+  @media screen and (max-width: 768px) { line-height: 20px; padding: 0 0 1.5px 0; }
 `
 
 export const CardInfo = styled.h2`
@@ -86,4 +86,7 @@ export const CardInfo = styled.h2`
   font-weight: 500;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+
+  @media screen and (max-width: 768px) { font-size: 0.7rem; }
 `

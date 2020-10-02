@@ -28,6 +28,8 @@ import {
     AcadsImgMobile
 } from "./styles"
 
+import mvp from "../../templates/about-page/assets/images/mvp.jpg"
+
 function About() {
     return(
         <AboutContainer>
@@ -67,7 +69,7 @@ function About() {
                     <AcadsWrapper>
                         <AcadsContent>
                             <AcadsSub>BS COMTECH Program</AcadsSub>
-                            <AcadsImgMobile />
+                            <AcadsImgMobile src={mvp} />
                             <AcadsText>Bachelor of Science in Communications Technology Management is a 4-year undergraduate program in the John Gokongwei School of Management. The curriculum is patterned after the BS Management Program, with an integration of subjects in communications and information technology. Through the program, students are exposed to both managerial and creative processes that equip them with the necessary skills and knowledge to work in multiple industries. Graduates of the course are known to enter the different fields of marketing, communications, media, advertising, and information technology.</AcadsText>
                             <AcadsButton 
                             href="https://ateneo.edu/ls/jgsom/bachelor-science-communications-technology-management"
@@ -75,7 +77,7 @@ function About() {
                                 Learn More
                             </AcadsButton>
                         </AcadsContent>
-                        <AcadsContent><AcadsImg /></AcadsContent>
+                        <AcadsContent><AcadsImg src={mvp} /></AcadsContent>
                     </AcadsWrapper>
                 </AcadsContainer>
             </Acads>

@@ -30,7 +30,7 @@ export const Card = styled.div`
   width: 65%;
   margin: -120px auto auto auto;
 
-  @media screen and (max-width: 768px) { width: 80%; padding: 30px; }
+  @media screen and (max-width: 768px) { width: 85%; padding: 30px; }
   @media screen and (max-width: 480px) { width: 90%; padding: 30px 15px; }
 `
 
