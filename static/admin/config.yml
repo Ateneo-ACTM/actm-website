@@ -78,6 +78,37 @@ collections:
               - label: "Button Text"
                 name: buttonText
                 widget: string
+  - name: about_page
+    label: "About Page"
+    filter:
+      field: "templateKey"
+      value: "about-page"
+    files:
+      - file: src/pages/about.md
+        label: About
+        name: index
+        fields:
+          - label: "Template Key"
+            name: templateKey
+            widget: hidden
+            default: about-page
+          - label: "URL Slug"
+            name: slug
+            widget: hidden
+            default: /
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - label: "Site Title"
+                name: siteTitle
+                widget: string
+                default: "Site Title"
+              - label: "Site Description"
+                name: siteDescription
+                widget: string
+                required: false
+                default: "Site Description"
   - name: story_page
     label: "Stories"
     create: true

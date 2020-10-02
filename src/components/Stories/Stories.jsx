@@ -1,30 +1,78 @@
 import React from "react"
-import { Card, CardContainer, CardImage, CardBody, CardTitle, CardInfo } from "./styles"
+import { StaticQuery, graphql } from "gatsby"
+import {
+  Card,
+  CardContainer,
+  CardImage,
+  CardBody,
+  CardTitle,
+  CardInfo,
+  Section,
+} from "./styles"
 
-function Stories() {
-    const stories = [
-        {
-            category: "Category",
-            title: "Lorem ipsum dolo sit amet, consectetur adipscing elit",
-            author: "Writer",
-            date: "September 12, 2020"
-        },
-    ]
-    
-    return (
-        stories.map((story, index) => (
-            <Card key={index}>
-                <CardContainer> 
-                    <CardImage src="" />
-                    <CardBody>
-                        <CardInfo> {story.category} </CardInfo>
-                        <CardTitle> {story.title} </CardTitle>
-                        <CardInfo>By {story.author} | { story.date } </CardInfo>
-                    </CardBody>
-                </CardContainer>
-            </Card>
-        ))
-    )
+function Stories({ data }) {
+  return (
+    <Section>
+      {data.map((datum, index) => {
+        const { slug, image, title, author, datetime } = datum.node.frontmatter
+        return title !== "Going Online with ACTM" ? (
+          <Card key={index} to={slug}>
+            <CardContainer>
+              <CardImage
+                image={
+                  image && !!image.childImageSharp
+                    ? image.childImageSharp.fluid.src
+                    : image
+                }
+              />
+              <CardBody>
+                {/* <CardInfo> {story.category} </CardInfo> */}
+                <CardTitle> {title} </CardTitle>
+                <CardInfo>
+                  By {author} | {datetime}{" "}
+                </CardInfo>
+              </CardBody>
+            </CardContainer>
+          </Card>
+        ) : null
+      })}
+    </Section>
+  )
 }
 
-export default Stories
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        allMarkdownRemark(
+          filter: { frontmatter: { templateKey: { eq: "story-page" } } }
+        ) {
+          edges {
+            node {
+              frontmatter {
+                slug
+                title
+                author
+                datetime
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 1440, quality: 90) {
+                      src
+                      srcSet
+                      aspectRatio
+                      sizes
+                      base64
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={data => {
+      return <Stories data={data.allMarkdownRemark.edges} {...props} />
+    }}
+  />
+)
