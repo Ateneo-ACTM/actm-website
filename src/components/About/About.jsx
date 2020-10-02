@@ -43,7 +43,7 @@ function About() {
             <WhatContainer>
                 <WhatWrapper>
                     <WhatContent className="a" />
-                    <WhatContent className="left">
+                    <WhatContent className="left left-m">
                         <WhatHeader className="left-m">We believe that there is a
                             <HeaderSpan>{`\n`}solid space for creativity{`\n`}</HeaderSpan>
                             in the world of business.</WhatHeader>
@@ -52,11 +52,11 @@ function About() {
                 </WhatWrapper>
                 <WhatWrapper>
                     <WhatContent className="b" />
-                        <WhatContent className="right">
-                            <WhatHeader className="right-m">We believe in the
-                                <HeaderSpan>{`\n`}importance of empathy.</HeaderSpan></WhatHeader>
-                            <WhatText className="right-m">ACTM goes the extra mile to understand the feelings and context of our members, as well as the target market of the projects we promote. We strive to promote an environment that trains empathetic, socially responsible practitioners of Integrated Marketing Communications, who have the ability to frame ideas into stories that inform and inspire.</WhatText>
-                        </WhatContent>
+                    <WhatContent className="right right-m">
+                        <WhatHeader className="right-m">We believe in the
+                            <HeaderSpan>{`\n`}importance of empathy.</HeaderSpan></WhatHeader>
+                        <WhatText className="right-m">ACTM goes the extra mile to understand the feelings and context of our members, as well as the target market of the projects we promote. We strive to promote an environment that trains empathetic, socially responsible practitioners of Integrated Marketing Communications, who have the ability to frame ideas into stories that inform and inspire.</WhatText>
+                    </WhatContent>
                 </WhatWrapper>
             </WhatContainer>
             </What>
