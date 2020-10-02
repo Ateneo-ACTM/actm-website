@@ -11,10 +11,10 @@ heroSection:
   image: /images/uploads/actm-banner.png
 quoteSection:
   image: /images/uploads/quote-background.png
-  quote: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  quote: Ateneo ACTM is the premier Integrated Marketing Communications (IMC) organization in the Ateneo. It also serves as the official home organization of BS Management, Major in Communications Technology Management students of the Ateneo de Manila University.
 madSection:
   image: /images/uploads/mad-background.png
-  tagline: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  tagline: MAD Concepts by ACTM is our in-house creative agency that moves beyond ideas to deliver creative, on-budget, and on-time services.
   buttonText: MAD Now!
   buttonVisible: true
 ---

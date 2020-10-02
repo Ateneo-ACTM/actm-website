@@ -13,7 +13,7 @@ const PhotoSection = ({ images }) => {
   }
 
   return (
-    <Slider {...settings}>
+    <Slider {...settings} id="photos">
       <div>
         <h3>1</h3>
       </div>

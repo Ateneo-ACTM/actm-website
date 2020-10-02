@@ -1,5 +1,5 @@
 import React from "react"
-import { Section, Quote, Container } from "./styles"
+import { Section, Quote } from "./styles"
 
 const QuoteSection = ({ quote, image }) => {
   return (
@@ -10,9 +10,7 @@ const QuoteSection = ({ quote, image }) => {
           : image
       }
     >
-      <Container>
-        <Quote>{quote}</Quote>
-      </Container>
+      <Quote>{quote}</Quote>
     </Section>
   )
 }

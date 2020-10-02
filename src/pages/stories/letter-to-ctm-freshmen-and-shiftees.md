@@ -7,7 +7,7 @@ description: A letter from the former President of Ateneo Association of
 datetime: October 1, 2020 12:07 AM
 category: Category
 author: ACTM Ad Hoc Team
-image: /images/uploads/actm-website-collateral.jpg
+image: /images/uploads/cover.png
 body: |
   Hey there, eager freshie/shiftee! <br/><br/>
 

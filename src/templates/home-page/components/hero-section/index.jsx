@@ -7,6 +7,7 @@ import {
   Banner,
   ArrowWrapper,
 } from "./styles"
+import { Link } from "gatsby"
 import arrow from "../../../../assets/icons/arrow-down.svg"
 
 const HeroSection = ({ title, image, tagline }) => {
@@ -26,7 +27,9 @@ const HeroSection = ({ title, image, tagline }) => {
           Move beyond <span>ideas</span>.
         </Tagline>
         <ArrowWrapper>
-          <img src={arrow} alt="arrow" />
+          <Link to="/#photos">
+            <img src={arrow} alt="arrow" />
+          </Link>
         </ArrowWrapper>
       </Container>
     </Section>

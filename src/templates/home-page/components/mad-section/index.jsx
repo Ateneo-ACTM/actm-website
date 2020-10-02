@@ -1,8 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
-import { Section, Tagline, Container, ButtonWrapper, Button } from "./styles"
+// import { Link } from "gatsby"
+import { Section, Tagline, ButtonWrapper, Button } from "./styles"
 
 const MADSection = ({ tagline, image, buttonText, buttonVisible }) => {
+  const toggleComingSoon = () => alert("Coming Soon!")
   return (
     <Section
       image={
@@ -11,16 +12,14 @@ const MADSection = ({ tagline, image, buttonText, buttonVisible }) => {
           : image
       }
     >
-      <Container>
+      <div>
         <Tagline>{tagline}</Tagline>
         {buttonVisible ? (
           <ButtonWrapper>
-            <Link to="/mad">
-              <Button>{buttonText}</Button>
-            </Link>
+            <Button onClick={toggleComingSoon}>{buttonText}</Button>
           </ButtonWrapper>
         ) : null}
-      </Container>
+      </div>
     </Section>
   )
 }

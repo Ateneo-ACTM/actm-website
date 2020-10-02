@@ -11,11 +11,20 @@ export const Section = styled.section`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-`
 
-export const Container = styled.div`
-  width: 50%;
-  margin: auto;
+  @media (max-width: 1280px) {
+    width: 85%;
+  }
+
+  @media (max-width: 1024px) {
+    width: 95%;
+  }
+
+  @media (max-width: 900px) {
+    width: 100%;
+    padding: 60px 30px;
+    min-height: 50vh;
+  }
 `
 
 export const Quote = styled.h2`
@@ -26,4 +35,22 @@ export const Quote = styled.h2`
   line-height: 43px;
   text-align: center;
   color: #062b3a;
+  max-width: 75%;
+  margin: auto;
+
+  @media (max-width: 1280px) {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+  }
 `
