@@ -71,16 +71,16 @@ export const StoryPageTemplate = ({
               By {author} | {moment(datetime).format("LLL")}
             </Subtitle>
             <SocmedWrapper>
-              <FacebookShareButton url={`https://ateneo.com${slug}`}>
+              <FacebookShareButton url={`https://ateneoactm.org${slug}`}>
                 <FacebookIcon size={32} round />
               </FacebookShareButton>
-              <TwitterShareButton url={`https://kuwentongpambata.com${slug}`}>
+              <TwitterShareButton url={`https://ateneoactm.org${slug}`}>
                 <TwitterIcon size={32} round />
               </TwitterShareButton>
-              <LinkedinShareButton url={`https://kuwentongpambata.com${slug}`}>
+              <LinkedinShareButton url={`https://ateneoactm.org${slug}`}>
                 <LinkedinIcon size={32} round />
               </LinkedinShareButton>
-              <EmailShareButton url={`https://kuwentongpambata.com${slug}`}>
+              <EmailShareButton url={`https://ateneoactm.org${slug}`}>
                 <EmailIcon size={32} round />
               </EmailShareButton>
             </SocmedWrapper>

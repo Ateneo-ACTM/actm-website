@@ -51,6 +51,17 @@ collections:
               - label: "Tagline"
                 name: tagline
                 widget: string
+          - label: Photo Section
+            name: photoSection
+            widget: object
+            fields:
+              - label: Background
+                name: background
+                widget: image
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                field: { label: Image, name: image, widget: image }
           - label: Quote Section
             name: quoteSection
             widget: object
@@ -95,7 +106,38 @@ collections:
           - label: "URL Slug"
             name: slug
             widget: hidden
-            default: /
+            default: /about
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - label: "Site Title"
+                name: siteTitle
+                widget: string
+                default: "Site Title"
+              - label: "Site Description"
+                name: siteDescription
+                widget: string
+                required: false
+                default: "Site Description"
+  - name: story_list_page
+    label: "Story List Page"
+    filter:
+      field: "templateKey"
+      value: "stories-page"
+    files:
+      - file: src/pages/stories.md
+        label: Stories
+        name: index
+        fields:
+          - label: "Template Key"
+            name: templateKey
+            widget: hidden
+            default: stories-page
+          - label: "URL Slug"
+            name: slug
+            widget: hidden
+            default: /stories
           - label: SEO
             name: seo
             widget: object

@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-// import image from "../assets/images/uxapps.jpg"
+import image from "../../assets/images/cover.png"
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
@@ -71,12 +71,12 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `og:url`,
-          content: `https://apps.uxsociety.org`,
+          content: `https://ateneoactm.org/`,
         },
-        // {
-        //   name: `og:image`,
-        //   content: image,
-        // },
+        {
+          name: `og:image`,
+          content: image,
+        },
       ].concat(meta)}
     />
   )
