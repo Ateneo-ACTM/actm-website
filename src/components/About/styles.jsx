@@ -17,13 +17,14 @@ export const AboutContainer = styled.div`
 
 export const Who = styled.section`
     width: 100vw;
-    min-height: 150vh;
+    min-height: 100vh;
     background-image: url(${who});
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     @media screen and (max-width: 768px) {
+        margin-top: 80px;
         min-height: 105vh; 
         background-image: url(${who_t});
         background-size: cover;
@@ -31,8 +32,8 @@ export const Who = styled.section`
         border-radius: 0px 40px 0px 0px;
     }  
 
-    @media screen and (max-width: 360px) {
-        min-height: 105vh; 
+    @media screen and (max-width: 375px) {
+        min-height: 100vh; 
         background-image: url(${who_m});
         background-size: cover;
         background-position: center;
@@ -42,7 +43,7 @@ export const Who = styled.section`
 
 export const WhoContent = styled.div`
     position: absolute;
-    top: 100%;
+    top: 50%;
     right: 10%;
     display: flex;
     flex-direction: column;
@@ -51,18 +52,17 @@ export const WhoContent = styled.div`
     align-items: center;
 
     @media screen and (max-width: 768px) {
-        top: -25%;
-        right: 10%;
-        transform: translate(20%, 40%);
+        top: 0;
+        right: -12.5%;
         width: 100%;
         height: 90%;
         justify-content: flex-end;
         align-items: flex-start;
     }
 
-    @media screen and (max-width: 360px) {
-        top: -17.5%;
-        right: 10%;
+    @media screen and (max-width: 375px) {
+        top: 5%;
+        right: -10%;
         width: 100%;
         height: 90%;
         justify-content: flex-end;
@@ -97,7 +97,7 @@ export const WhoText = styled.p`
         width: 430px;
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 375px) {
         margin: 15px 0 0 0;
         font-size: 0.75rem;
         width: 280px;
@@ -160,7 +160,7 @@ export const WhatWrapper = styled.div`
         }
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 375px) {
         width: 100%; 
         flex-direction: column;
         margin: 25px 0;
@@ -197,9 +197,9 @@ export const WhatContent = styled.div`
         &.b { background-image: url(${what_2_t}); width: 80vw; }
     }
 
-    @media screen and (max-width: 360px) { 
+    @media screen and (max-width: 375px) { 
         width: 100%;
-        min-height: 100vw;
+        min-height: 80vw;
         background-size: contain;
         
         &.right-m { align-items: flex-end;  padding-right: 10vw; }
@@ -227,7 +227,7 @@ export const WhatHeader = styled.h1`
         &.right-m { text-align: left; }
     } 
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 375px) {
         &.right-m { text-align: right; }
     } 
 `
@@ -238,7 +238,7 @@ export const HeaderSpan = styled.span`
     color: #FEC200;
     white-space: pre-wrap;
 
-    @media screen and (max-width: 480px) { font-weight: 900; }
+    @media screen and (max-width: 375px) { font-weight: 900; }
 `
 
 export const WhatText = styled.p`
@@ -259,7 +259,7 @@ export const WhatText = styled.p`
         &.right-m { text-align: left; }
     }
 
-    @media screen and (max-width: 360px) { 
+    @media screen and (max-width: 375px) { 
         font-size: 0.75rem; 
         width: 80vw; 
         
@@ -354,6 +354,7 @@ export const AcadsButton = styled.a`
     background: linear-gradient(90deg, #3FE0E0 0%, #21B1CF 100%);
     border-radius: 8px;
     color: white;
+    cursor: pointer;
 
     @media screen and (max-width: 768px) { margin: 10vh 0 15vh 0; }
 `
@@ -384,5 +385,5 @@ export const AcadsImgMobile = styled.img`
     border-radius: 15px;
     margin: 30px 0;
 
-    @media screen and (max-width: 768px) { display: flex; }
+    @media screen and (max-width: 768px) { display: flex; margin: 50px 0; }
 `
