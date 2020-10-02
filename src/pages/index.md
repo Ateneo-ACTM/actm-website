@@ -17,7 +17,7 @@ photoSection:
     - image: /images/uploads/RW20_AteneoACTM_P3_TambayWeek.jpg
 quoteSection:
   image: /images/uploads/quote-background.png
-  quote: Ateneo ACTM is the premier Integrated Marketing Communications (IMC) organization in the Ateneo. It also serves as the official home organization of BS Management, Major in Communications Technology Management students of the Ateneo de Manila University.
+  quote: Ateneo ACTM is the premier Integrated Marketing Communications (IMC) organization in the Ateneo de Manila University.
 madSection:
   image: /images/uploads/mad-background.png
   tagline: MAD Concepts by ACTM is our in-house creative agency that moves beyond ideas to deliver creative, on-budget, and on-time services.

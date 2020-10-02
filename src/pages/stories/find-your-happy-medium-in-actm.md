@@ -10,7 +10,7 @@ description: "In COA RecWeek 2020: Coalesce, ACTM opened its doors to its next
 datetime: September 30, 2020 11:57 PM
 category: Category
 author: Marina Peneyra
-image: /images/uploads/HappyMedium.jpg
+image: /images/uploads/IMG_2350.jpg
 body: |
   In COA RecWeek 2020: Coalesce, ACTM opened its doors to its next batch of members with the project theme of “Find Your Happy Medium.” The Executive Board carefully strategized and planned for this year’s theme with Integrated Marketing Communications (IMC) as the foundation, and in the process, pivoted the organization’s branding to an exciting new direction. <br/><br/>
 

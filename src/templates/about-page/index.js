@@ -2,6 +2,8 @@ import React from "react"
 import About from "../../components/About"
 import Navbar from "../../components/Navbar"
 import Footer from "../../components/Footer"
+import Helmet from "react-helmet"
+import image from "../../assets/images/cover.png"
 
 const AboutPage = () => {
   const seo = {
@@ -12,6 +14,52 @@ const AboutPage = () => {
 
   return (
     <>
+      <Helmet
+        title={seo.siteTitle}
+        titleTemplate={` %s | Ateneo ACTM`}
+        meta={[
+          {
+            name: `description`,
+            content: seo.siteDescription,
+          },
+          {
+            property: `og:title`,
+            content: seo.siteTitle,
+          },
+          {
+            property: `og:description`,
+            content: seo.siteDescription,
+          },
+          {
+            property: `og:type`,
+            content: `website`,
+          },
+          {
+            name: `twitter:card`,
+            content: `summary`,
+          },
+          {
+            name: `twitter:creator`,
+            content: `ACTM`,
+          },
+          {
+            name: `twitter:title`,
+            content: seo.siteTitle,
+          },
+          {
+            name: `twitter:description`,
+            content: seo.siteDescription,
+          },
+          {
+            name: `og:url`,
+            content: `https://ateneoactm.org/`,
+          },
+          {
+            name: `og:image`,
+            content: image,
+          },
+        ]}
+      />
       <Navbar slug="/About" />
       <About />
       <Footer />
