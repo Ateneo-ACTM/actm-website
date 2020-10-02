@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "gatsby"
 import who from "../../templates/about-page/assets/images/about_1.svg"
 import who_m from "../../templates/about-page/assets/images/about_1_m.svg"
 import who_t from "../../templates/about-page/assets/images/about_1_t.svg"
@@ -348,7 +347,7 @@ export const AcadsText = styled.p`
     @media screen and (max-width: 768px) { width: 100%; }
 `
 
-export const AcadsButton = styled(Link)`
+export const AcadsButton = styled.a`
     appearance: button;
     font-family: 'Work Sans', sans-serif;
     padding: 5px 20px;
