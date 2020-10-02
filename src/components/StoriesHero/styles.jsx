@@ -16,12 +16,12 @@ export const Hero = styled.section`
     height: 60vh;
     width: 100vw;
 
-    @media screen and (max-width: 960px) {
-        height: 40vh;
+    @media screen and (max-width: 768px) {
+        height: 30vh;
         background-image: url(${tablet});
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 375px) {
         height: 25vh;
         background-image: url(${mobile});
     }
