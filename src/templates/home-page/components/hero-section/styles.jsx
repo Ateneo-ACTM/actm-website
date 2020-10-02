@@ -3,12 +3,16 @@ import styled from "styled-components"
 export const Section = styled.section`
   background: #ffffff;
   padding: 90px 0;
-  width: 75%;
-  margin auto;
+  margin: auto;
+  min-width: 100vw;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+`
+
+export const Container = styled.div`
+  width: 75%;
 
   @media (max-width: 1280px) {
     width: 85%;
@@ -22,10 +26,6 @@ export const Section = styled.section`
      width: 100%;
      padding: 60px 30px;
     }
-`
-
-export const Container = styled.div`
-  width: 100%;
 `
 export const Banner = styled.div`
   margin: 0 0 30px 0;
@@ -47,7 +47,7 @@ export const Title = styled.h5`
 `
 
 export const Tagline = styled.h3`
-  font-family: Pangram, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 36px;

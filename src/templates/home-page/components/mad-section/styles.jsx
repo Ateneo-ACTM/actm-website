@@ -28,7 +28,8 @@ export const Section = styled.section`
 `
 
 export const Tagline = styled.h2`
-  font-family: Pangram, sans-serif;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -57,6 +58,7 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin: 60px auto;
+  cursor: pointer;
 
   @media (max-width: 900px) {
     margin: 30px auto 0 auto;

@@ -28,7 +28,8 @@ export const Section = styled.section`
 `
 
 export const Quote = styled.h2`
-  font-family: Pangram, sans-serif;
+  width: 75%;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
