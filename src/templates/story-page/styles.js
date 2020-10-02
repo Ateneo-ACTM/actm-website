@@ -29,6 +29,9 @@ export const Card = styled.div`
   padding: 30px 45px;
   width: 65%;
   margin: -120px auto auto auto;
+
+  @media screen and (max-width: 768px) { width: 85%; padding: 30px; }
+  @media screen and (max-width: 360px) { width: 95%; padding: 30px 15px; }
 `
 
 export const BackWrapper = styled.div`
@@ -57,11 +60,13 @@ export const BackContainer = styled.div`
 `
 export const Title = styled.h1`
   font-weight: 600;
-  font-size: 38px;
+  font-size: 3rem;
   line-height: 60px;
   margin: 0 0 0 16px 0;
   color: #000000;
   text-align: center;
+
+  @media screen and (max-width: 360px) { font-size: 2.5rem; line-height: 50px; }
 `
 
 export const CategoryWrapper = styled.div`
@@ -74,27 +79,30 @@ export const Category = styled.div`
   background: #fac001;
   border-radius: 36px;
   padding: 8px 24px;
-  font-size: 14px;
+  font-size: 1rem;
   color: #000000;
+  text-transform: uppercase;
 `
 
 export const Subtitle = styled.h4`
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   color: #062b3a;
   margin-bottom: 16px;
   text-align: center;
 `
 export const Container = styled.div`
   padding: 30px 60px;
+
+  @media screen and (max-width: 360px) { padding: 0; }
 `
 
 export const Body = styled.div`
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 35px;
   text-indent: 50px;
 
