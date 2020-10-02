@@ -9,6 +9,19 @@ export const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1280px) {
+    width: 85%;
+   }
+ 
+   @media (max-width: 1024px) {
+     width: 95%;
+    }
+ 
+    @media (max-width: 900px) {
+     width: 100%;
+     padding: 60px 30px;
+    }
 `
 
 export const Container = styled.div`
@@ -18,7 +31,7 @@ export const Banner = styled.div`
   margin: 0 0 30px 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-image: ${props => `url(${props.image})`};
   height: 360px;
 `

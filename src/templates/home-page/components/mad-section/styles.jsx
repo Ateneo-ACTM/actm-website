@@ -11,11 +11,20 @@ export const Section = styled.section`
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-`
 
-export const Container = styled.div`
-  width: 50%;
-  margin: auto;
+  @media (max-width: 1280px) {
+    width: 85%;
+  }
+
+  @media (max-width: 1024px) {
+    width: 95%;
+  }
+
+  @media (max-width: 900px) {
+    width: 100%;
+    padding: 60px 30px;
+    min-height: 50vh;
+  }
 `
 
 export const Tagline = styled.h2`
@@ -26,12 +35,36 @@ export const Tagline = styled.h2`
   line-height: 43px;
   text-align: center;
   color: white;
+
+  @media (max-width: 1280px) {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+  }
 `
 
 export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin: 60px auto;
+
+  @media (max-width: 900px) {
+    margin: 30px auto 0 auto;
+  }
+
+  @media (max-width: 540px) {
+    margin: 16px auto 0 auto;
+  }
 `
 
 export const Button = styled.div`
@@ -44,4 +77,19 @@ export const Button = styled.div`
   color: #000000;
   background: #fec200;
   border-radius: 10px;
+
+  @media (max-width: 1280px) {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 `

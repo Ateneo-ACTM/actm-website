@@ -1,9 +1,10 @@
 import React, { Fragment } from "react"
-import Layout from "../../components/Layout/"
+import Layout from "../../components/Layout"
 import { graphql } from "gatsby"
 
 import HeroSection from "./components/hero-section"
 import QuoteSection from "./components/quote-section"
+import StoriesSection from "./components/stories-section"
 import MADSection from "./components/mad-section"
 
 export const HomePageTemplate = ({ heroSection, quoteSection, madSection }) => (
@@ -14,6 +15,7 @@ export const HomePageTemplate = ({ heroSection, quoteSection, madSection }) => (
       image={heroSection.image}
     />
     <QuoteSection quote={quoteSection.quote} image={quoteSection.image} />
+    <StoriesSection />
     <MADSection
       tagline={madSection.tagline}
       image={madSection.image}
