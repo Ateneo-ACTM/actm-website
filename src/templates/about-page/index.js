@@ -1,6 +1,6 @@
 import React from "react"
 import About from "../../components/About"
-import Navbar from "../../components/Navbar/"
+import Navbar from "../../components/Navbar"
 import Footer from "../../components/Footer"
 
 const AboutPage = () => {
@@ -11,7 +11,7 @@ const AboutPage = () => {
   }
 
   return (
-    <> 
+    <>
       <Navbar slug="/About" />
       <About />
       <Footer />

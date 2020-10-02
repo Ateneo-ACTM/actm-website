@@ -2,7 +2,9 @@ import React from "react"
 import Exclusive from "../../components/Exclusive"
 import Stories from "../../components/Stories"
 import StoriesHero from "../../components/StoriesHero"
-import Layout from "../../components/Layout/"
+import { Section } from "./styles"
+import Navbar from "../../components/Navbar"
+import Footer from "../../components/Footer"
 
 const StoriesPage = () => {
   const seo = {
@@ -12,11 +14,15 @@ const StoriesPage = () => {
   }
 
   return (
-    <Layout path="/Stories" seo={seo}>
+    <>
+      <Navbar slug="/stories" />
       <StoriesHero />
-      <Exclusive />
-      <Stories />
-    </Layout>
+      <Section>
+        <Exclusive />
+        <Stories />
+      </Section>
+      <Footer />
+    </>
   )
 }
 
