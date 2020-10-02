@@ -11,8 +11,8 @@ description: "With the changes in the academic year brought about by the
   ACTM in the upcoming year.  "
 datetime: October 1, 2020 12:02 AM
 category: Category
-author: ACTM Ad Hoc Team
-image: /images/uploads/cover.png
+author: Marina Peneyra
+image: /images/uploads/OOTP.jpg
 body: |
   With the changes in the academic year brought about by the pandemic, organizations in the Ateneo are adjusting their processes to better adapt to an online setup. For ACTM, it’s business as usual—at least according to ACTM’s Office of the President (OOTP). To talk more about their plans for the organization, ACTM President Marco Ricafort and Executive Vice President Noelle Amba join us today to give us a sneak peak into what we can expect of ACTM in the upcoming year.  <br/><br/>
 

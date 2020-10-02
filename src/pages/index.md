@@ -9,6 +9,12 @@ heroSection:
   title: ATENEO ASSOCIATION FOR COMMUNICATION TECHNOLOGY MANAGEMENT
   tagline: Move beyond ideas.
   image: /images/uploads/actm-banner.png
+photoSection:
+  background: /images/uploads/pictures.png
+  images:
+    - image: /images/uploads/RW20_AteneoACTM_P2_LEAP.jpg
+    - image: /images/uploads/RW20_AteneoACTM_P1_CSR.png
+    - image: /images/uploads/RW20_AteneoACTM_P3_TambayWeek.jpg
 quoteSection:
   image: /images/uploads/quote-background.png
   quote: Ateneo ACTM is the premier Integrated Marketing Communications (IMC) organization in the Ateneo. It also serves as the official home organization of BS Management, Major in Communications Technology Management students of the Ateneo de Manila University.
