@@ -1,20 +1,15 @@
-import styled from "styled-components";
-import { Link } from "gatsby";
-import '../Layout/styles.css';
+import styled from "styled-components"
+import { Link } from "gatsby"
+import "../Layout/styles.css"
 
 export const Nav = styled.nav`
   display: flex;
   background: var(--navbar);
-  height: 80px;
   justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 999;
-
-  @media screen and (max-width: 768px) {
-    height: 10vh;
-  }
 `
 
 export const Container = styled.div`
@@ -23,6 +18,10 @@ export const Container = styled.div`
   align-items: center;
   height: auto;
   width: 100vw;
+
+  @media (max-width: 768px) {
+    width: auto;
+  }
 `
 
 export const NavLogo = styled(Link)`
@@ -50,7 +49,9 @@ export const MenuIcon = styled.div`
 
   .burger .burger-lines,
   .burger .burger-lines:after,
-  .burger .burger-lines:before { background-color: black; }
+  .burger .burger-lines:before {
+    background-color: black;
+  }
 
   @media screen and (max-width: 768px) {
     display: block;
@@ -61,12 +62,14 @@ export const MenuIcon = styled.div`
     cursor: pointer;
   }
 
-  .burger { font-size: 10px; }
+  .burger {
+    font-size: 10px;
+  }
 `
 
 export const NavMenu = styled.ul`
   display: grid;
-  grid-template-columns: repeat(5,auto);
+  grid-template-columns: repeat(3, auto);
   grid-gap: 25px;
   list-style: none;
   text-align: center;
@@ -95,6 +98,13 @@ export const NavItem = styled.li`
   height: 50px;
   top: 50%;
   transform: translateY(-50%);
+
+  @media (max-width: 768px) {
+    display: block;
+    height: auto;
+    top: auto;
+    transform: auto;
+  }
 `
 
 export const NavLink = styled(Link)`
@@ -107,6 +117,7 @@ export const NavLink = styled(Link)`
   color: var(--navbar-text);
   padding: 0rem 1rem;
   height: 100%;
+  font-weight: ${props => (props.active ? "bold" : "normal")};
 
   &:after {
     background: none repeat scroll 0 0 transparent;
@@ -127,9 +138,26 @@ export const NavLink = styled(Link)`
   }
 
   @media screen and (max-width: 768px) {
-    color: white;
     text-align: center;
     padding: 2rem;
     width: 100%;
+    justify-content: center;
   }
+`
+
+export const NavMobile = styled.ul`
+  display: none;
+  list-style: none;
+  padding: 0;
+
+  @media (max-width: 768px) {
+    display: block;
+    width: 100%;
+    margin-top: 90px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+`
+
+export const NavWeb = styled.div`
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `

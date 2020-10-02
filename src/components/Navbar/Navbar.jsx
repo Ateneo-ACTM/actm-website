@@ -1,32 +1,70 @@
-import React from "react"
-import { Nav, Container, MenuIcon, NavLogo, NavMenu, NavItem, NavLink } from "./styles"
-import Burger from '@animated-burgers/burger-squeeze'
-import '@animated-burgers/burger-squeeze/dist/styles.css'
+import React, { useState } from "react"
+import {
+  Nav,
+  Container,
+  MenuIcon,
+  NavLogo,
+  NavMenu,
+  NavItem,
+  NavLink,
+  NavMobile,
+} from "./styles"
+import Burger from "@animated-burgers/burger-squeeze"
+import "@animated-burgers/burger-squeeze/dist/styles.css"
 
-const Navbar = ({ slug }) => (
-  <Nav>
-    <Container>
-      <NavLogo>ATENEO<b>ACTM</b></NavLogo>
-      <MenuIcon><Burger /></MenuIcon>
-      <NavMenu>
-        <NavItem>
-          <NavLink to="#">About</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to="#">Org Culture</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to="#">Services</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to="#">Stories</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to="#">Contact Us</NavLink>
-        </NavItem>
-      </NavMenu>
-    </Container>
-  </Nav>
-)
+const Navbar = ({ slug }) => {
+  const [navStatus, setNavStatus] = useState(false)
+
+  const toggleMobileNavigation = () => setNavStatus(!navStatus)
+
+  return (
+    <Nav>
+      <Container>
+        <NavLogo to="/">
+          ATENEO<b>ACTM</b>
+        </NavLogo>
+        <MenuIcon>
+          <Burger onClick={toggleMobileNavigation} isOpen={navStatus} />
+        </MenuIcon>
+        <NavMenu>
+          <NavItem>
+            <NavLink to="/" active={slug === "/"}>
+              Home
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="/about" active={slug === "/about"}>
+              About
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="/stories" active={slug === "/stories"}>
+              Stories
+            </NavLink>
+          </NavItem>
+        </NavMenu>
+      </Container>
+      {navStatus && (
+        <NavMobile>
+          <NavItem>
+            <NavLink to="/" active={slug === "/"}>
+              Home
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="/about" active={slug === "/about"}>
+              About
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="/stories" active={slug === "/stories"}>
+              Stories
+            </NavLink>
+          </NavItem>
+        </NavMobile>
+      )}
+    </Nav>
+  )
+}
 
 export default Navbar
