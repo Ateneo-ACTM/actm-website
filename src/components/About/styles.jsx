@@ -43,8 +43,10 @@ export const Who = styled.section`
 
 export const WhoContent = styled.div`
     position: absolute;
-    top: 50%;
+    bottom: 20%;
     right: 10%;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -52,22 +54,14 @@ export const WhoContent = styled.div`
     align-items: center;
 
     @media screen and (max-width: 768px) {
-        top: 0;
-        right: -12.5%;
-        width: 100%;
-        height: 90%;
+        bottom: 10%;
+        left: 10%;
         justify-content: flex-end;
         align-items: flex-start;
     }
 
-    @media screen and (max-width: 375px) {
-        top: 5%;
-        right: -10%;
-        width: 100%;
-        height: 90%;
-        justify-content: flex-end;
-        align-items: flex-start;
-    }
+    @media screen and (max-width: 480px) { bottom: 2.5%; }
+    @media screen and (max-width: 375px) { bottom: 5%; }
 `
 
 export const WhoHeader = styled.h1`
@@ -76,12 +70,11 @@ export const WhoHeader = styled.h1`
     font-size: 2.5rem;
     font-weight: 400;
     margin: 0 0 25px 0;
-    width: 550px;
+    width: 100%;
 
     @media screen and (max-width: 480px) {
         margin: 0;
         font-size: 2rem;
-        width: 360px;
     }
 `
 
@@ -97,11 +90,8 @@ export const WhoText = styled.p`
         width: 430px;
     }
 
-    @media screen and (max-width: 375px) {
-        margin: 15px 0 0 0;
-        font-size: 0.75rem;
-        width: 280px;
-    }
+    @media screen and (max-width: 480px) { margin: 15px 0 0 0; width: 350px; }
+    @media screen and (max-width: 375px) { width: 280px; }
 `
 
 export const What = styled.section`
@@ -160,7 +150,7 @@ export const WhatWrapper = styled.div`
         }
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         width: 100%; 
         flex-direction: column;
         margin: 25px 0;
@@ -197,7 +187,7 @@ export const WhatContent = styled.div`
         &.b { background-image: url(${what_2_t}); width: 80vw; }
     }
 
-    @media screen and (max-width: 375px) { 
+    @media screen and (max-width: 480px) { 
         width: 100%;
         min-height: 80vw;
         background-size: contain;
@@ -227,7 +217,7 @@ export const WhatHeader = styled.h1`
         &.right-m { text-align: left; }
     } 
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         &.right-m { text-align: right; }
     } 
 `
@@ -259,8 +249,7 @@ export const WhatText = styled.p`
         &.right-m { text-align: left; }
     }
 
-    @media screen and (max-width: 375px) { 
-        font-size: 0.75rem; 
+    @media screen and (max-width: 480px) { 
         width: 80vw; 
         
         &.left-m { text-align: left; }
