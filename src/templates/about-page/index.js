@@ -1,6 +1,7 @@
 import React from "react"
 import About from "../../components/About"
-import Layout from "../../components/Layout/"
+import Navbar from "../../components/Navbar"
+import Footer from "../../components/Footer"
 
 const AboutPage = () => {
   const seo = {
@@ -10,9 +11,11 @@ const AboutPage = () => {
   }
 
   return (
-    <Layout path="/About" seo={seo}>
+    <>
+      <Navbar slug="/About" />
       <About />
-    </Layout>
+      <Footer />
+    </>
   )
 }
 
