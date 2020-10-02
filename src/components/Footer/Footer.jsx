@@ -20,7 +20,7 @@ const Footer = () => (
       <FooterLogo src={logo} alt="logo" />
       <FooterMenu>
         <FooterItem>
-          <FooterLink to="/home">Home</FooterLink>
+          <FooterLink to="/">Home</FooterLink>
         </FooterItem>
         <FooterItem>
           <FooterLink to="/about">About</FooterLink>

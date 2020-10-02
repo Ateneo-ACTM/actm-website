@@ -4,8 +4,9 @@ import Layout from "../../components/Layout/"
 
 const AboutPage = () => {
   const seo = {
-    siteTitle: 'Hello',
-    siteDescription: 'World'
+    siteTitle: "About",
+    siteDescription:
+      "This is the official website of Ateneo Association of Commuication Technology Management!",
   }
 
   return (
