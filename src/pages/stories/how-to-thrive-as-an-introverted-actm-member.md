@@ -1,7 +1,7 @@
 ---
 templateKey: story-page
 slug: /stories/how-to-thrive-as-an-introverted-actm-member
-title: How to thrive as an introverted ACTM member
+title: How to Thrive as an Introverted ACTM Member
 description: If there’s anything ACTM members are known for, it’s their ability
   to excel at both work and play. As a freshman, I would watch coursemates take
   a full load of subjects, apply for core team positions in organizations, and
